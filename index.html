@@ -1,313 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Modeling | Graphic Design</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- bootstrap-cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--Font-awasome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- google-fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100;1,200;1,300;1,400&family=Lora:ital,wght@0,400;0,500;1,500;1,600&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Noto+Serif:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Varela&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Modeling | Graphic Design</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- bootstrap-cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!--Font-awasome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100;1,200;1,300;1,400&family=Lora:ital,wght@0,400;0,500;1,500;1,600&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,600&family=Noto+Serif:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,400&family=Varela&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-    <section class="section-home ">
+  <section class="section-home ">
     <header class=" bg-body-tertiary" id="home">
-        <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top" bid="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand display-5" href="#"><h3><span>B</span>ARATHRAJ</h3></a>
-              <button class="navbar-toggler " id="toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" id="toggle-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#service">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#project">Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-            
-                <a type="button" href="./assets/Gohul-Resume-Final.pdf" class="cv-btn btn btn-danger my-auto">Download CV</a>
+      <nav class="navbar navbar-expand-lg bg-danger-subtle fixed-top" bid="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand display-5" href="#">
+            <h3><span>B</span>ARATHRAJ</h3>
+          </a>
+          <button class="navbar-toggler " id="toggler-btn" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="toggle-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
 
-              </div>
-              
-            </div>
-          </nav>
-          <div class=" hero-body row my-5">
-            <div class="hero-content container col-7 mt-5">
-                <h3 class="mt-2">Hello!</h3>
-                <h2>I'm <span>Barathraj</span>,</h2>
-                <p>
-                    I am a 3D Graphic Designer specializing in creating high-quality 3D models, animations, and visualizations for various industries. I bring concepts to life with detailed designs, enhancing product presentations, architectural renderings, and creative projects through visually striking 3D art.                </p>
-                <div class="social-media ">
-                    <a target="_blank" href="https://www.youtube.com/@bharatharts7269"><li class="fa fa-youtube"></li></a>
-                    <a target="_blank" href="https://www.instagram.com/_bharath_arts/"><li class="fa fa-instagram"></li></a>
-                    <!-- <a target="_blank" href="https://www.facebook.com/gohul.raj.1069"><li class="fa fa-facebook"></li></a> -->
-                    <a target="_blank" href="http://www.linkedin.com/in/bharath-raj-347420327"><li class="fa fa-linkedin"></li></a>
-                    <a target="_blank" href="https://wa.me/8489264271"><li class="fa fa-whatsapp"></li></a>
+            <a type="button" href="./assets/BHARATH RESUME 2024 (2).pdf" class="cv-btn btn btn-danger my-auto">Download
+              CV</a>
 
-
-                </div>
-                <a type="button" class="btn btn-danger" href="#contact">Hire Me</a>
-            </div>
-            
           </div>
-            </div class="container">
-            <div class="col-2">
-            </div>
-          </div>
-          <!-- whatsapp-section -->
-       <div id="whatsapp">
-            <a href="https://wa.me/9025196951" target="_blank" id="toggle1" class="wtsapp">
-                <i class="fa fa-whatsapp"></i>
+
+        </div>
+      </nav>
+      <div class=" hero-body row my-5">
+        <div class="hero-content container col-7 mt-5">
+          <h3 class="mt-2">Hello!</h3>
+          <h2>I'm <span>Barathraj</span>,</h2>
+          <p>
+            I am a 3D Graphic Designer specializing in creating high-quality 3D models, animations, and visualizations
+            for various industries. I bring concepts to life with detailed designs, enhancing product presentations,
+            architectural renderings, and creative projects through visually striking 3D art. </p>
+          <div class="social-media ">
+            <a target="_blank" href="https://www.youtube.com/@bharatharts7269">
+              <li class="fa fa-youtube"></li>
             </a>
-       </div>
-    </header>
-</section>
-    <!-- Skills-section -->
+            <a target="_blank" href="https://www.instagram.com/_bharath_arts/">
+              <li class="fa fa-instagram"></li>
+            </a>
+            <!-- <a target="_blank" href="https://www.facebook.com/gohul.raj.1069"><li class="fa fa-facebook"></li></a> -->
+            <a target="_blank" href="http://www.linkedin.com/in/bharath-raj-347420327">
+              <li class="fa fa-linkedin"></li>
+            </a>
+            <a target="_blank" href="https://wa.me/+91 9025196951">
+              <li class="fa fa-whatsapp"></li>
+            </a>
 
-    <section id="service" class="container" id="service" >
-        <div class="section-title my-3">
-            <h2 class="text-center"><span><li class="fa fa-cog m-3"></li></span>Skills</h2>
+
+          </div>
+          <a type="button" class="btn btn-danger" href="#contact">Hire Me</a>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 link">
-            <div >
-                <div class="card" >
-                    <img src="./assets/image/sketch.webp" class="card-img-top img-fluid" style="height: 300px;" id="card-img" alt="...">
-                    <div class="card-body">
-                       <a href="./Sketches.html"> <h4 class="card-title">Sketches</h4> </a>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
+
+      </div>
+      </div class="container">
+      <div class="col-2">
+      </div>
+      </div>
+      <!-- whatsapp-section -->
+      <div id="whatsapp">
+        <a href="https://wa.me/9025196951" target="_blank" id="toggle1" class="wtsapp">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+      </div>
+    </header>
+  </section>
+  <!-- Skills-section -->
+
+  <section id="service" class="container" id="service">
+    <div class="section-title my-3">
+      <h2 class="text-center"><span>
+          <li class="fa fa-cog m-3"></li>
+        </span>Skills</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 link">
+        <div>
+          <div class="card">
+            <img src="./assets/image/sketch.webp" class="card-img-top img-fluid" style="height: 300px;" id="card-img"
+              alt="...">
+            <div class="card-body">
+              <a href="./Sketches.html">
+                <h4 class="card-title">Sketches</h4>
+              </a>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
             </div>
           </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <img src="./assets/image/blender_img.jpg" class="card-img-top img-fluid" style="height: 300px;" id="card-img" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Blender</h4>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card" >
-                    <img src="./assets/image/service-soft-dev.jpg" class="card-img-top img-fluid" style="height: 300px;" id="card-img" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Auto Desk Mayaa</h4>
-                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                    </div>
-                </div>
-            </div>
-                
-            </div>
         </div>
-    </section>
-    <!-- Project-section -->
-
-    <section class="section-project bg-body-tertiary" id="project">
-        <div class="section-title my-5 ">
-            <h2 class="text-center pt-4"><span><li class="fa fa-product-hunt"></li></span>Projects</h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img src="./assets/image/blender_img.jpg" class="card-img-top img-fluid" style="height: 300px;" id="card-img"
+            alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Blender</h4>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-        <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mt-2">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/image/audi render image 14.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/audi render image 15.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/audi render image 16.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/audi render image 17.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/audi render image 18.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/audi render image 19.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 mt-2">
-                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/image/LIGHT 09.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/LIGHT 11.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/LIGHT 12.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 mt-2">
-                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/image/lamp.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-            </div>
-
-           
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img src="./assets/image/service-soft-dev.jpg" class="card-img-top img-fluid" style="height: 300px;"
+            id="card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Auto Desk Mayaa</h4>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-5 mt-2">
-                <div class="card">
-                   <iframe src="./assets/image/lv_0_20240830124705.mp4" frameborder="0" height="400px"></iframe>
-                </div>
-            </div>
+      </div>
 
-            <div class="col-12 col-md-6 col-lg-5 mt-2">
-                <div class="card">
-                   <iframe src="./assets/image/0001-0300.mp4" frameborder="0" height="400px"></iframe>
-                </div>
-            </div>
-            
-        </div>
     </div>
-    </section>
-    
-    <!-- About-section -->
-    <section class="about-section mx-3" id="about">
-        <div class="section-title my-3">
-            <h2 class="text-center"><span><li class="fa fa-user-secret m-3"></li></span>About me</h2>
-        </div>
-            <div class="container p-3">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div >
-                        <img class="img-fluid about-img mx-auto" src="./assets/image/about-img.avif" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h2 class="h2 py-2">Need a Creative Product? I can Help You!</h2>
-                    <p>I’m Bharath Raj, a passionate and detail-oriented 3D modeler with creating high-quality 3D assets for various applications including games, animations, and simulations. My expertise lies in transforming concepts into visually stunning and technically precise models using industry-standard software such as Blender, Autodesk Maya.</p>
-                        <a type="button" href="./assets/Gohul-Resume-Final.pdf" style="width: 150px;" class="btn btn-danger text-center m-auto" download>Download CV</a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- contact-section -->
-
-   <section id="contact" class="bg-body-tertiary">
-    <div class="section-title my-3">
-        <h2 class="h2 text-center"><span><li class="fa fa-address-card m-3"></li></span>Contact</h2>
     </div>
-    
+  </section>
+  <!-- Project-section -->
+
+  <section class="section-project bg-body-tertiary" id="project">
+    <div class="section-title my-5 ">
+      <h2 class="text-center pt-4"><span>
+          <li class="fa fa-product-hunt"></li>
+        </span>Projects</h2>
+    </div>
     <div class="container">
-        <div class="row d-flex">
-            <div class="col-12 col-lg-8">
-                
-                  <h6 class="lead mx-3">
-                    2/271 Nakkeerar street,<br>
-                    sembanarkoil,<br>
-                    Mayiladuthurai - 609309<br>
-                    
-                </h6>
-                <a target="_blank" href="+919025196951" class="btn"><li class="fa fa-phone mx-1"></li> +91 9025196951</a><br>
-                <a target="_blank" href="mailto:bharatharts812@gmail.com" class="btn"><li class="fa fa-envelope mx-1"></li>bharatharts812@gmail.com</a>
-                
-
-               
-                <div class="social-media mx-2">
-                    <a target="_blank" href="https://www.instagram.com/_bharath_arts/"><li class="fa fa-instagram"></li></a>
-                    <a target="_blank" href="https://www.youtube.com/@bharatharts7269"><li class="fa fa-youtube"></li></a>
-                    <a target="_blank" href="http://www.linkedin.com/in/bharath-raj-347420327"><li class="fa fa-linkedin"></li></a>
-                    <a target="_blank" href="https://wa.me/9025196951"><li class="fa fa-whatsapp"></li></a>
-                </div>
-                
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 " style="height: 400px;  padding-top: 10px;">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/image/audi render image 14.jpg" class="d-block w-100" style="height: 300px;"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/audi render image 15.jpg" class="d-block w-100" style="height: 300px;"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/audi render image 16.jpg" class="d-block w-100" style="height: 300px;"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/audi render image 17.jpg" class="d-block w-100 " style="height: 300px;"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/audi render image 18.jpg" class="d-block w-100" style="height: 300px;"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/audi render image 19.jpg" class="d-block w-100" style="height: 300px;"
+                  alt="...">
+              </div>
             </div>
-            <div class="location-map col-12 col-lg-4 ">
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15660.444074280236!2d79.73175254477293!3d11.105103125027602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a551f63b42b4a6d%3A0xd971b9a0e3f9693c!2sBoopathi%20Nagar%2C%20Sembanarkoil%2C%20Tamil%20Nadu%20609309!5e0!3m2!1sen!2sin!4v1725783219822!5m2!1sen!2sin" width="300" height="250" style="border:2px solid lightpink;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h3 style="text-align: center;">Auto Desk Maya</h4>
         </div>
-    </div>
-    
 
-</section>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+        <div class="col-12 col-md-6 col-lg-4 mt-2" style="height: 400px;  padding-top: 10px;">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/image/LIGHT 09.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/LIGHT 11.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/image/LIGHT 12.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h3 style="text-align: center;">Auto Desk Maya</h4>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mt-2" style="height: 400px;  padding-top: 10px;">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/image/lamp.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <h3 style="text-align: center;">Auto Desk Maya</h4>
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 " style="height: 400px;  padding-top: 10px;">
+          <img src="./assets/image/ISO.png" class="d-block w-100" style="height: 300px;" alt="...">
+          <h3 style="text-align: center;">Blender</h4>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 " style="height: 400px;  padding-top: 10px;">
+          <img src="./assets/image/tea shop.png" class="d-block w-100" style="height: 300px;" alt="...">
+          <h3 style="text-align: center;">Blender</h4>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-5 mt-2">
+          <div class="card">
+            <iframe src="./assets/image/lv_0_20240830124705.mp4" frameborder="0" height="400px"></iframe>
+          </div>
+          <h3 style="text-align: center;">Auto Desk Maya</h4>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5 mt-2">
+          <div class="card">
+            <iframe src="./assets/image/0001-0300.mp4" frameborder="0" height="400px"></iframe>
+          </div>
+          <h3 style="text-align: center;">Blender</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About-section -->
+  <section class="about-section mx-3" id="about">
+    <div class="section-title my-3">
+      <h2 class="text-center"><span>
+          <li class="fa fa-user-secret m-3"></li>
+        </span>About me</h2>
+    </div>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div>
+            <img class="img-fluid about-img mx-auto" src="./assets/image/about-img.avif" alt="" srcset="">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 class="h2 py-2">Need a Creative Product? I can Help You!</h2>
+          <p>I’m Bharath Raj, a passionate and detail-oriented 3D modeler with creating high-quality 3D assets for
+            various applications including games, animations, and simulations. My expertise lies in transforming
+            concepts into visually stunning and technically precise models using industry-standard software such as
+            Blender, Autodesk Maya.</p>
+          <a type="button" href="./assets/BHARATH RESUME 2024 (2).pdf" style="width: 150px;"
+            class="btn btn-danger text-center m-auto" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- contact-section -->
+
+  <section id="contact" class="bg-body-tertiary">
+    <div class="section-title my-3">
+      <h2 class="h2 text-center"><span>
+          <li class="fa fa-address-card m-3"></li>
+        </span>Contact</h2>
+    </div>
+
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-12 col-lg-8">
+
+          <h6 class="lead mx-3">
+            2/271 Nakkeerar street,<br>
+            sembanarkoil,<br>
+            Mayiladuthurai - 609309<br>
+
+          </h6>
+          <a target="_blank" href="+919025196951" class="btn">
+            <li class="fa fa-phone mx-1"></li> +91 9025196951
+          </a><br>
+          <a target="_blank" href="mailto:bharatharts812@gmail.com" class="btn">
+            <li class="fa fa-envelope mx-1"></li>bharatharts812@gmail.com
+          </a>
+
+
+
+          <div class="social-media mx-2">
+            <a target="_blank" href="https://www.instagram.com/_bharath_arts/">
+              <li class="fa fa-instagram"></li>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@bharatharts7269">
+              <li class="fa fa-youtube"></li>
+            </a>
+            <a target="_blank" href="http://www.linkedin.com/in/bharath-raj-347420327">
+              <li class="fa fa-linkedin"></li>
+            </a>
+            <a target="_blank" href="https://wa.me/9025196951">
+              <li class="fa fa-whatsapp"></li>
+            </a>
+          </div>
+
+        </div>
+        <div class="location-map col-12 col-lg-4 ">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15660.444074280236!2d79.73175254477293!3d11.105103125027602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a551f63b42b4a6d%3A0xd971b9a0e3f9693c!2sBoopathi%20Nagar%2C%20Sembanarkoil%2C%20Tamil%20Nadu%20609309!5e0!3m2!1sen!2sin!4v1725783219822!5m2!1sen!2sin"
+            width="300" height="250" style="border:2px solid lightpink;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
